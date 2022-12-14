@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body background="/static/css/395434.webp">
+    <div class="table">
+    <table style="width: 100%">
+        <tr>
+            <th>Tweet</th>
+            <th>Sentiment</th>
+        </tr>
+             {% for value in result %} 
+                <tr>
+                    <td>{{value['text']}}</td>
+                    <td>{{value['sentiment']}}</td>   
+                </tr> 
+             {% endfor %} 
+    </table>
+    </div>
+    
+</body>
+</html> 
