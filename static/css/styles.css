@@ -1,0 +1,89 @@
+.navbar{
+    background-color:#ccc;
+    position: fixed;
+    width: 100%;
+    padding-left:42%; 
+}
+.heading{
+        padding: 10px 16px;
+        background:none;
+        color: #f1f1f1;
+        text-align: center;
+        font-weight:bolder;
+    
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size:larger;
+    font-weight: bolder;
+}
+.navbar a:hover{
+    color:yellow
+}
+form{
+    text-align: center;
+    padding-top: 4rem;
+}
+.data{
+    font-size:x-large;
+    color: white;
+}
+.input{
+    font-size: x-large;
+    color: black;
+}
+.button{
+    font-size:xx-large;
+}
+.button:hover{
+    color: darkgoldenrod;
+    
+}
+footer{
+    color: white;
+    font-size: larger;
+    padding-left: 90%;
+}
+table,th,td{
+    border: 1px solid whitesmoke;
+    font-size: large;
+    color: white;
+}
+.content{
+    color: white;
+    font-size: large;
+    margin: 2rem;
+    padding: 2rem;
+    border-style: groove;
+}
+.graph{
+    color: white;
+}
+.sentiment{
+    border-style: groove;
+    padding-bottom: 10%;
+}
+.price{
+    color: white;
+}
+.tech{
+    font-size: x-large;
+        color: white;
+    }
+.technical{
+    border-style: groove;
+    padding-bottom: 10%;
+    text-align: center;
+}    
+.head{
+    padding: 10px 16px;
+        background: none;
+        color: #f1f1f1;
+        text-align: center;
+        font-weight: bolder;
+}
