@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Prices</title>
+</head>
+
+<body background="/static/css/395434.webp">
+    <div class="graph">
+    <h2>Positive tweets:{{pos}}</h2>
+    <h2>Negative tweets:{{neg}}</h2>
+    <h2>Neutral tweets:{{neu}}</h2>
+    <br><br>
+    {% if pos>neg and pos>neu %}
+    <h2><em>It is very likely that {{query}} will go to the moon!!</em></h2>   
+    {% endif %}
+    {% if neu>neg and neu>pos %}
+    <h2><em>It is likely that {{query}} will go to the moon!!</em></h2>
+    {% endif %}
+    {% if neg>pos and neg>neu %}
+    <h2><em>It is not very likely that {{query}} will go to the moon!!</em></h2>
+    {% endif %}
+    <br><br>
+    </div>
+    <div class="price">
+    <h1>Realtime price of crypto: {{crypto_prices}}</h1>
+    </div>
+</body>
+
+</html>
