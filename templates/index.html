@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto to moon</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body background="/static/css/395434.webp">
+    <div class="heading">
+    <h1>Will this Crypto go to the moon?</h1>
+    </div>
+    <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/more">More</a>
+    </div>
+    <br><br>
+    <br><br><br>
+    <div class="heading">
+    <h1>Sentiment Analysis</h1>
+    </div>
+    <div class="sentiment">
+    <form action="/predict" method="POST">
+        <label for="query" class="data">Enter the Cryptocurrency to be analyzed  </label>
+        <input type="text" name="query" id="query" placeholder="Cryptocurrency name"  class="input">
+        <br><br>
+        <label for="count" class="tech">Enter the no of tweets to analyze data  </label>
+        <input type="text" name="count" id="count" placeholder="No of tweets"  class="tech">
+        <br><br><br><br>
+        <button type="submit" name="submit" value="Analyze!" formaction='/predict'>
+            <div class="button">
+            View tweets
+            </div>
+        </button>
+        <br><br>
+        <button name="submit" value="View analysis" formaction="/graph">
+            <div class="button">
+            View analysis
+            </div>
+        </button>
+        <br><br>
+        <button name="submit" value="Visualize" formaction="/graph1">
+            <div class="button">
+                Visualize
+            </div>
+        </button>
+    </div>
+        <br><br><br><br><br>
+    <div class="heading">
+        <h1>Technical Analysis</h1>
+    </div>
+    <div class="technical">   
+        <br><br>
+        <label for="sym" class="tech">Enter the Cryptocurrency symbol </label>
+        <input type="text" name="sym" id="sym" placeholder="Ex: BTC, ETH, BUSD, SOL" class="input">
+        <br><br><br><br>
+        <button name="submit" value="Generate graph" formaction="/technical">
+            <div class="button">
+                Generate graph
+            </div>
+        </button> 
+        </div>
+    </form>
+    <br><br>
+    <br>
+    <footer>&copy Copyright 2022 </footer>
+
+</body>
+</html>
